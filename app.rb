@@ -13,7 +13,7 @@ get '/' do
   erb :index
 end
 
-get '/stylesheets/*' do
+get '/styles/*' do
   content_type 'text/css'
-  sass '../styles/'.concat(params[:splat].join.chomp('.css')).to_sym
+  scss '../styles/'.concat(params[:splat].join.chomp('.css')).to_sym
 end
